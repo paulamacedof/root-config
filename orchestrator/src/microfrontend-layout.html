@@ -1,0 +1,20 @@
+<single-spa-router>
+    <main>
+      <nav>
+        <application name="@bytebank/navbar"></application>
+      </nav>
+
+      <route path="/" exact>
+        <application name="@bytebank/home"></application>
+      </route>
+      
+      <route path="/transaction">
+        <application name="@bytebank/transaction"></application>
+      </route>
+
+      <route default>
+        <application name="@bytebank/not-found"></application>
+      </route> 
+    </main>
+  </single-spa-router>
+  
